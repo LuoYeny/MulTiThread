@@ -1,0 +1,20 @@
+package miltiThread.chapter2.t2.t2_6;
+
+
+
+/**
+ * @author 罗叶妮
+ * @version 1.0
+ * @date 2019/10/28 10:27
+ */
+public class ThreadA extends Thread {
+    private Service service;
+    public ThreadA(Service service){
+        super();
+        this.service=service;
+    }
+    public void run(){
+        super.run();
+        service.setUsernamePassword("a","aa");
+    }
+}
